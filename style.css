@@ -157,6 +157,25 @@ section{
     #title2{
         font-size: 25px;
     }
+    .redes{
+        font-size: 8px;
+    }
+    .knowledge{
+        font-size: 80px!important;
+    }
+    .knowledge2{
+        font-size: 50px!important;
+    }
+
+    .knowledge-container{
+        width: 170px!important;
+    }
+    .contact{
+        flex-wrap: nowrap!important;
+    }
+    .knowledge-title{
+        font-size: 32px!important;
+    }
 }
 .description-cont{
     flex-direction: column;
@@ -203,6 +222,12 @@ section{
     align-content: center;
     flex-wrap: wrap;
 }
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
 .service p{
    text-align: center;
    font-size: 20px;
@@ -211,6 +236,10 @@ section{
    color: black;
 }
 .service{
+    width: 350px;
+    text-align: center;
+}
+.knowledge-container{
     width: 350px;
     text-align: center;
 }
