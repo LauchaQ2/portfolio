@@ -17,11 +17,21 @@ section{
 #description{
     background-color: rgb(238, 207, 122);
 }
-#servicios,#proyectos{
+#servicios,#proyectos,#footer{
     background-color: rgb(35, 15, 68);
 }
 #conocimientos, #contacto{
     background-color: rgb(238, 207, 122);
+}
+#footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-container{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 .logo-container{
     padding: 5px;
@@ -175,6 +185,7 @@ section{
     }
     .knowledge-title{
         font-size: 32px!important;
+        width: 250px;
     }
 }
 .description-cont{
