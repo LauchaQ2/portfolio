@@ -184,8 +184,8 @@ section{
         flex-wrap: nowrap!important;
     }
     .knowledge-title{
-        font-size: 32px!important;
-        width: 250px;
+        font-size: 40px!important;
+        width: 100%;
     }
 }
 .description-cont{
