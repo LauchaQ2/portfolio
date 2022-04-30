@@ -187,6 +187,10 @@ section{
         font-size: 40px!important;
         width: 100%;
     }
+    .svg{
+        width: 80px!important;
+    }
+    
 }
 .description-cont{
     flex-direction: column;
@@ -257,6 +261,7 @@ section{
 .project-container{
     width: 300px;
     text-align: center;
+    margin-bottom: 25px;
 }
 .web{
     width: 220px;
@@ -282,7 +287,7 @@ h1{
 }
 .p-white{
     color: white!important;
-    margin-bottom: 30px!important;
+    margin-bottom: 10px!important;
 }
 .a{
     text-decoration: none!important;
@@ -292,7 +297,13 @@ i:hover{
 color: grey;
 transition: 0.5s ease-in-out;
 }
-i{
+.svg{
+    width: 170px;
+}
+.svg:hover{
+    filter: invert(50%);
+}
+i,.svg{
     transition: 0.5s ease-in-out;
 }
 .web:hover,.cm:hover{
@@ -301,4 +312,17 @@ i{
 .redes{
     text-decoration: none!important;
     color: black!important;
+}
+.black{
+    color:black!important;
+}
+.button{
+    padding:3px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.title-know{
+    font-size: 30px;
+    font-weight: 600;
 }
