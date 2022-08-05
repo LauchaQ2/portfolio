@@ -446,76 +446,90 @@ i,
     left: 0;
     border-radius: 10px;
     transition: 3s;
+    background: white;
 }
-.slider .knowledge-container:hover img{
-    transform:translateY(-30px)scale(1.2);
+
+.slider .knowledge-container:hover img {
+    transform: translateY(-30px)scale(1.2);
 }
-.slider .knowledge-container:hover p{
-    transform:translateY(-5px)scale(1.2);
+
+.slider .knowledge-container:hover p {
+    transform: translateY(-5px)scale(1.2);
 }
+
 @media (max-width: 600px) {
     .slider {
         margin-top: 50px;
         margin-bottom: 50px;
         position: relative;
-        width: 200px;
+        width: 300px;
         height: 150px;
         transform-style: preserve-3d;
-        animation: rotate 30s linear infinite;
+        animation: rotate 20s linear infinite;
     }
-    
+
     @keyframes rotate {
         0% {
-            transform: perspective(2800px)rotateY(0deg);
+            transform: perspective(1200px)rotateY(0deg);
         }
-    
+
+        50% {
+            transform: perspective(1200px)rotateY(180deg);
+        }
+
         100% {
-            transform: perspective(2800px)rotateY(360deg);
+            transform: perspective(1000px)rotateY(360deg);
         }
     }
-    
+
     .slider .knowledge-container {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         transform-origin: center;
         transform-style: preserve-3d;
-        transform: rotateY(calc(var(--i)*40deg))translateZ(150px);
+        transform: rotateY(calc(var(--i)*40deg))translateZ(70px);
     }
-       
+
     .slider .knowledge-container img {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 10px;
         object-fit: cover;
         transition: 2s;
     }
-    
+
     .slider .knowledge-container p {
         position: absolute;
-        width: 100px;
-        height: 30px;
+        width: 75px;
+        height: fit-content;
         top: 100px;
         left: 0;
         border-radius: 10px;
-        transition: 3s;
+        transition: 2s;
+        background: white;
+        margin-left: 5px;
     }
-    .slider .knowledge-container:hover img{
-        transform:translateY(-30px)scale(1.2);
+
+    .slider .knowledge-container:hover img {
+        transform: translateY(-30px)scale(1.2);
     }
-    .slider .knowledge-container:hover p{
-        transform:translateY(-5px)scale(1.2);
+
+    .slider .knowledge-container:hover p {
+        transform: translateY(-30px)scale(1.2);
     }
+
     .title-know {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 550;
     }
-    #conocimientos{
+
+    #conocimientos {
         padding-bottom: 0px;
     }
 }
