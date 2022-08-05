@@ -3,43 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url('./assets/binary.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: repeat;
 }
-section{
+
+section {
     padding-top: 35px;
     padding-bottom: 35px;
 
 }
-#description{
+
+#description {
     background-color: rgb(238, 207, 122);
 }
-#servicios,#proyectos,#footer{
+
+#servicios,
+#proyectos,
+#footer {
     background-color: rgb(35, 15, 68);
 }
-#conocimientos, #contacto{
+
+#conocimientos,
+#contacto {
     background-color: rgb(238, 207, 122);
 }
-#footer{
+
+#conocimientos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#footer {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
 }
-.logo-container{
+
+.logo-container {
     padding: 5px;
     border: 1px solid white;
 }
-.logo{
+
+.logo {
     width: 100px;
 }
+
 .menu-btn {
     position: relative;
     display: none;
@@ -80,6 +101,7 @@ section{
 .menu-btn__burger::after {
     transform: translateY(16px);
 }
+
 /*MENU NAVBAR */
 .navbar {
     padding: 10px;
@@ -130,7 +152,8 @@ section{
 .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
     .navbar {
         flex-direction: row;
         align-items: flex-start;
@@ -161,38 +184,47 @@ section{
     .navbar-links.active {
         display: flex;
     }
-    #title{
+
+    #title {
         font-size: 40px;
     }
-    #title2{
+
+    #title2 {
         font-size: 25px;
     }
-    .redes{
+
+    .redes {
         font-size: 8px;
     }
-    .knowledge{
-        font-size: 80px!important;
-    }
-    .knowledge2{
-        font-size: 50px!important;
+
+    .knowledge {
+        font-size: 80px !important;
     }
 
-    .knowledge-container{
-        width: 170px!important;
+    .knowledge2 {
+        font-size: 50px !important;
     }
-    .contact{
-        flex-wrap: nowrap!important;
+
+    .knowledge-container {
+        width: 170px !important;
     }
-    .knowledge-title{
-        font-size: 40px!important;
+
+    .contact {
+        flex-wrap: nowrap !important;
+    }
+
+    .knowledge-title {
+        font-size: 40px !important;
         width: 100%;
     }
-    .svg{
-        width: 80px!important;
+
+    .svg {
+        width: 80px !important;
     }
-    
+
 }
-.description-cont{
+
+.description-cont {
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
@@ -202,10 +234,12 @@ section{
     align-content: center;
     flex-wrap: wrap;
 }
-.description{
+
+.description {
     display: block;
 }
-.title-name{
+
+.title-name {
     color: black;
     backdrop-filter: blur(15px);
     font-weight: 800;
@@ -214,7 +248,8 @@ section{
     padding: 2px;
     margin: 0;
 }
-.title-name2{
+
+.title-name2 {
     color: black;
     backdrop-filter: blur(15px);
     font-weight: 800;
@@ -223,7 +258,8 @@ section{
     padding: 2px;
     margin: 0;
 }
-.solid{
+
+.solid {
     border: 1px solid black;
     margin: 0;
     margin-bottom: 20px;
@@ -231,98 +267,255 @@ section{
     background-color: black;
     opacity: .20;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
 }
-.service p{
-   text-align: center;
-   font-size: 20px;
-   word-wrap: break-word;
-   font-weight: 600;
-   color: black;
+
+.service p {
+    text-align: center;
+    font-size: 20px;
+    word-wrap: break-word;
+    font-weight: 600;
+    color: black;
 }
-.service{
+
+.service {
     width: 350px;
     text-align: center;
 }
-.knowledge-container{
-    width: 350px;
+
+.knowledge-container {
     text-align: center;
 }
-.project-container{
+
+.project-container {
     width: 300px;
     text-align: center;
     margin-bottom: 25px;
 }
-.web{
+
+.web {
     width: 220px;
     transition: all 0.3s;
     box-sizing: border-box;
     max-width: 100%;
 }
-.cm{
+
+.cm {
     width: 220px;
     transition: all 0.3s;
     box-sizing: border-box;
     max-width: 100%;
 }
-.project{
+
+.project {
     width: 180px;
     margin-bottom: 10px;
 }
-h1{
+
+h1 {
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:600!important;
-    font-size: 40px!important;
+    font-weight: 600 !important;
+    font-size: 40px !important;
 }
-.p-white{
-    color: white!important;
-    margin-bottom: 10px!important;
+
+.p-white {
+    color: white !important;
+    margin-bottom: 10px !important;
 }
-.a{
-    text-decoration: none!important;
-    color:white!important;
+
+.a {
+    text-decoration: none !important;
+    color: white !important;
 }
-i:hover{
-color: grey;
-transition: 0.5s ease-in-out;
-}
-.svg{
-    width: 170px;
-}
-.svg:hover{
-    filter: invert(50%);
-}
-i,.svg{
+
+i:hover {
+    color: grey;
     transition: 0.5s ease-in-out;
 }
-.web:hover,.cm:hover{
+
+.svg {
+    width: 170px;
+}
+
+.svg:hover {
+    filter: invert(50%);
+}
+
+i,
+.svg {
+    transition: 0.5s ease-in-out;
+}
+
+.web:hover,
+.cm:hover {
     transform: scale(1.3) rotate(5deg);
 }
-.redes{
-    text-decoration: none!important;
-    color: black!important;
+
+.redes {
+    text-decoration: none !important;
+    color: black !important;
 }
-.black{
-    color:black!important;
+
+.black {
+    color: black !important;
 }
-.button{
-    padding:3px;
+
+.button {
+    padding: 3px;
     border: 0px;
     border-radius: 5px;
     font-size: 12px;
 }
-.title-know{
+
+.title-know {
     font-size: 30px;
     font-weight: 600;
+}
+
+.slider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1200px)rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1200px)rotateY(360deg);
+    }
+}
+
+.slider .knowledge-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*40deg))translateZ(350px);
+}
+
+.slider .knowledge-container i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider .knowledge-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider .knowledge-container p {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 205px;
+    left: 0;
+    border-radius: 10px;
+    transition: 3s;
+}
+.slider .knowledge-container:hover img{
+    transform:translateY(-30px)scale(1.2);
+}
+.slider .knowledge-container:hover p{
+    transform:translateY(-5px)scale(1.2);
+}
+@media (max-width: 600px) {
+    .slider {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+        width: 200px;
+        height: 150px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+    
+    @keyframes rotate {
+        0% {
+            transform: perspective(2800px)rotateY(0deg);
+        }
+    
+        100% {
+            transform: perspective(2800px)rotateY(360deg);
+        }
+    }
+    
+    .slider .knowledge-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*40deg))translateZ(150px);
+    }
+       
+    .slider .knowledge-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: 2s;
+    }
+    
+    .slider .knowledge-container p {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 100px;
+        left: 0;
+        border-radius: 10px;
+        transition: 3s;
+    }
+    .slider .knowledge-container:hover img{
+        transform:translateY(-30px)scale(1.2);
+    }
+    .slider .knowledge-container:hover p{
+        transform:translateY(-5px)scale(1.2);
+    }
+    .title-know {
+        font-size: 18px;
+        font-weight: 550;
+    }
+    #conocimientos{
+        padding-bottom: 0px;
+    }
 }
